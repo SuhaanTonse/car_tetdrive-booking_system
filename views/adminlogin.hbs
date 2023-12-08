@@ -1,0 +1,48 @@
+{{>home-nav}}
+
+<h2 class="h1-responsive font-weight-bold text-center my-3">
+    Admin Login
+  </h2>
+  
+    {{#if messages.success_msg}}
+  <div class="alert  alert-success alert-dismissible fade show" role="alert">
+    {{messages.success_msg}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {{/if}}
+
+
+
+  {{#if alert}}
+  <div class="alert  alert-danger alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {{/if}}
+
+<div class="container mt-5">
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/asset/login.jpg" class="img-fluid rounded-start" alt="adminloginimage">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body"> 
+        <h5 class="card-title">Admin Login</h5>
+    <form autocomplete="off" class="needs-validation" action="/admin/login" method="post">
+        <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="InputEmail" required >
+          </div>
+        <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="InputPassword" required>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

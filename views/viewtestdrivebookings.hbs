@@ -1,0 +1,41 @@
+{{>user-nav}}
+
+
+<div class="container pt-3 pb-5" >
+<div class="row">
+    <div class="col-6"><h5>My Test-Drive Bookings</h5></div>
+</div>
+
+    <table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Car Id</th>
+      <th scope="col">Image</th>
+      <th scope="col">Company</th>
+      <th scope="col">Model</th>     
+      <th scope="col">address</th>
+      <th scope="col">Test-Drive Date</th>
+      <th scope="col" class="text-end">Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr>
+      <th scope="row">{{this.car_id}}</th>
+      <td><img src="/{{this.image}}" style="height: 75px; width:75px"  alt="carimage"></td>
+      <td>{{this.company}}</td>
+      <td>{{this.model}}</td>
+      <td>{{this.address}}</td>
+      <td>{{this.booking_date}}</td>
+      <td class="text-end">  
+      
+        <a href="/user/carFeedback/{{this.car_id}}" type="button" class ="btn btn-Success btn-small"><i class="bi bi-pencil-square"></i>Give Feedback</a>
+       
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

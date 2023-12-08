@@ -1,0 +1,73 @@
+{{>user-nav}}
+
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+{{/if}}
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4>Write A Review</h4>
+          <a href="/user/dashboard" class="btn btn-danger float-end">Back</a>
+        </div>
+        <div class="card-body">
+
+            {{#each rows}}
+          <form
+            class="row g-3 needs-validation  "
+            autocomplete="off"
+            ,
+            method="post"
+            ,
+            action="/user/carFeedback/{{this.car_id}}"
+            ,
+           
+          >
+          
+            <div class="mb-3 col-6 ">
+              <label for="carRating" class="form-label">Ratings</label>
+              <input
+                type="number"
+                name="ratings"
+                class="form-control"
+                id="carRating"
+                placeholder="Rate from 1* - 5*"
+                min="1" max="5"
+
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6 ">
+              <label for="comment" class="form-label">Comment</label>
+              <input
+                type="text"
+                name="comments"
+                class="form-control"
+                id="comment"
+                placeholder="Leave A Comment"
+            
+                required
+              />
+              </div>
+
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+            {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

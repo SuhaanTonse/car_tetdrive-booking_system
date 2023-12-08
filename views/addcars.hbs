@@ -1,0 +1,136 @@
+{{>admin-nav}}
+
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+{{/if}}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4>Add Cars</h4>
+          <a href="/admin/dashboard" class="btn btn-danger float-end">Back</a>
+        </div>
+        <div class="card-body">
+          <form
+            class="row g-3 needs-validation"
+            autocomplete="off"
+            ,
+            method="post"
+            ,
+            action="/admin/addcars"
+            ,
+            enctype="multipart/form-data"
+          >
+            <div class="mb-3 col-6">
+              <label for="carCompany" class="form-label">Company</label>
+              <input
+                type="text"
+                name="company"
+                class="form-control"
+                id="carCompany"
+                placeholder="Enter Car Company"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label for="carModel" class="form-label">Model</label>
+              <input
+                type="text"
+                name="model"
+                class="form-control"
+                id="carModel"
+                placeholder="Enter Car Model"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carTransmission" class="form-label">Transmission Type</label>
+              <input
+                type="text"
+                name="transmission"
+                class="form-control"
+                id="carTransmission"
+                placeholder="Automatic/Manual.etc"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carSeatingCapacity" class="form-label">Seating
+                Capacity</label>
+              <input
+                type="text"
+                name="seating_capacity"
+                class="form-control"
+                id="carSeatingCapacity"
+                placeholder="Enter Seating Capacity"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carFuelType" class="form-label">Fuel Type</label>
+              <input
+                type="text"
+                name="fuel"
+                class="form-control"
+                id="carFuelType"
+                placeholder="Petrol/Diesel.etc"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carMilage" class="form-label">Milage</label>
+              <input
+                type="text"
+                name="milage"
+                class="form-control"
+                id="carMilage"
+                placeholder="Enter Milage in kmpl"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carPrice" class="form-label">Price</label>
+              <input
+                type="text"
+                name="price"
+                class="form-control"
+                id="carPrice"
+                placeholder="Enter Price"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="carImage" class="form-label"> Upload Image</label>
+              <input
+                type="file"
+                name="image"
+                class="form-control"
+                id="carImage"
+                accept="image/*"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
