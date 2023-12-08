@@ -14,13 +14,13 @@ Our user-friendly platform ensures a hassle-free process, allowing you to schedu
 ## Screenshots
 
 <p align="center">
-  <img alt="" src="" width="45%">
+  <img alt="" src="https://github.com/SuhaanTonse/car_tetdrive-booking_system/issues/1#issuecomment-1847651793" width="45%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="" src="" width="45%">
+  <img alt="" src="https://github.com/SuhaanTonse/car_tetdrive-booking_system/issues/1#issuecomment-1847655346" width="45%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="" src="" width="45%">
+  <img alt="" src="https://github.com/SuhaanTonse/car_tetdrive-booking_system/issues/1#issuecomment-1847654774" width="45%">
   &nbsp; &nbsp; &nbsp; &nbsp; 
-  <img alt="" src="" width="45%">
+  <img alt="" src="https://github.com/SuhaanTonse/car_tetdrive-booking_system/issues/1#issuecomment-1847653806" width="45%">
   &nbsp; &nbsp; &nbsp; &nbsp; 
 
 </p>
